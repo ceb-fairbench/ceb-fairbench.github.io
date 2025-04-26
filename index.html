@@ -369,21 +369,21 @@
         <h2 class="title is-3">Main Results</h2>
         <div class="content has-text-justified">
           <p>
-            Existing datasets are often limited in their coverage of bias types, social groups and tasks, but serve as a good starting point for CEB to synthensize new datasets. We leverage GPT-3.5 and GPT-4 to operate necessary augmentations to provide additional information for constructed samples.
+            To better understand the performance of LLMs on CEB, we present the overall results of various LLMs on all datasets for Stereotyping and Toxicity in Table 1 and 2, respectively.
           </p>
         </div>
       </div>
     </div>
     <figure class="table-figure">
-      <img src="static/images/CEB_stereotyping_overall_scores.png" alt="Figure 14. CEB Stereotyping Overall Scores." style="width: 100%;">
+      <img src="static/images/CEB_stereotyping_overall_scores.png" alt="Table 1. CEB Stereotyping Overall Scores." style="width: 100%;">
       <figcaption class="figure-caption">
-        <b>Figure 14.</b> The overall results of various LLMs on all datasets for Stereotyping. All scores are higher the better. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
+        <b>Table 1.</b> The overall results of various LLMs on all datasets for Stereotyping. All scores are higher the better. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
       </figcaption>
     </figure>
     <figure class="table-figure">
-      <img src="static/images/CEB_toxicity_overall_scores.png" alt="Figure 15. CEB Toxicity Overall Scores." style="width: 100%;">
+      <img src="static/images/CEB_toxicity_overall_scores.png" alt="Table 2. CEB Toxicity Overall Scores." style="width: 100%;">
       <figcaption class="figure-caption">
-        <b>Figure 15.</b> The overall results of various LLMs on all datasets for Toxicity. All scores are higher the better. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
+        <b>Table 2.</b> The overall results of various LLMs on all datasets for Toxicity. All scores are higher the better. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
       </figcaption>
     </figure>
     <div class="columns is-centered has-text-centered">
@@ -394,7 +394,7 @@
               From the results, we could observe that GPT-3.5 and GPT-4 consistently outperform other LLMs on a variety of tasks, as well as the overall score. This indicates the superiority of GPT models regarding the presence of inherent bias.
             </li>
             <li>
-              GPT models may not perform the best when the bias type is switched to Toxicity, which demonstrates its weakness in dealing with toxic content, especially when being asked to generate text in the for those indirect evlauation tasks.
+              GPT models may not perform as well when the bias type is switched to <b>Toxicity</b>, which demonstrates their weakness in dealing with toxic content—especially when asked to <b><generate text</b> for those indirect evaluation tasks.
             </li>
           </ul>
         </div>
