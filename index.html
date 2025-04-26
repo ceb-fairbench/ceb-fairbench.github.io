@@ -380,6 +380,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Main Results</h2>
+        <h3 class="title is-4">Point-wise Bias Identification Tasks (Both Direct and Indirect)</h3>
         <div class="content has-text-justified">
           <p>
             To better understand the performance of LLMs on CEB, we present the overall results of various LLMs on all datasets for Stereotyping and Toxicity in Table 1 and 2, respectively. Note that as the bias scores and toxicity scores are both lower the better, we modify the bias and toxicity scores to \(100 - x\), where \(x\) is the score. In this way, the scores are comparable to the accuracy in the Recognition and Selection tasks, which also enables the calculation of the overall score on all four tasks.
@@ -390,13 +391,13 @@
     <figure class="table-figure">
       <img src="static/images/CEB_stereotyping_overall_scores.png" alt="Table 1. CEB Stereotyping Overall Scores." style="width: 100%;">
       <figcaption class="figure-caption">
-        <b>Table 1.</b> The overall results of various LLMs on all datasets for Stereotyping. All scores are higher the better. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
+        <b>Table 1.</b> The overall results of various LLMs on all datasets for Stereotyping. <b><u>All scores are higher the better</u></b>. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
       </figcaption>
     </figure>
     <figure class="table-figure">
       <img src="static/images/CEB_toxicity_overall_scores.png" alt="Table 2. CEB Toxicity Overall Scores." style="width: 100%;">
       <figcaption class="figure-caption">
-        <b>Table 2.</b> The overall results of various LLMs on all datasets for Toxicity. All scores are higher the better. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
+        <b>Table 2.</b> The overall results of various LLMs on all datasets for Toxicity. <b><u>All scores are higher the better</u></b>. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
       </figcaption>
     </figure>
     <div class="columns is-centered has-text-centered">
@@ -407,17 +408,30 @@
               From the results, we could observe that GPT-3.5 and GPT-4 consistently outperform other LLMs on a variety of tasks, as well as the overall score. This indicates the superiority of GPT models regarding the presence of inherent bias.
             </li>
             <li>
-              GPT models may not perform as well when the bias type is switched to <b>Toxicity</b>, which demonstrates their weakness in dealing with toxic content—especially when asked to <b><generate text</b> for those indirect evaluation tasks.
+              GPT models may not perform as well when the bias type is switched to <b>Toxicity</b>, which demonstrates their weakness in dealing with toxic content—especially when asked to <b>generate text</b> for those indirect evaluation tasks.
             </li>
           </ul>
         </div>
       </div>
     </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-3">Group-wise Fairness Tasks</h3>
+        <div class="content has-text-justified">
+          <p>
+            The tasks shown in Table 1 and 2 are point-wise bias identification tasks. In this section, we present the results of group-wise fairness tasks, which are more challenging due to the need to identify the senentive attributes and consider the group distribution of the data. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <figure class="table-figure">
+      <img src="static/images/CEB_decision_making_group_fairness.png" alt="Table 3. CEB Decision-making Group Fairness." style="width: 100%;">
+      <figcaption class="figure-caption">
+        <b>Table 3.</b> Results of \(\Delta\)DP and \(\Delta\)EO in \(%\) of various LLMs on our CEB datasets for the Classification task. <b><u></u>The lower values denote fairer results</u></b>. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
+      </figcaption>
+    </figure>
   </div>
 </section>
-
-
-
 
 
 <section class="section" id="BibTeX">
