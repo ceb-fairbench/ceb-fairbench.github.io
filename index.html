@@ -159,33 +159,34 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present <b>CEB</b>, a <b><u>C</u></b>ompositional <b><u>E</u></b>valuation <b><u>B</u></b>enchmark for systematically evaluating bias in Large Language Models (LLMs). CEB comprises 19 novel datasets (11,004 samples in total) that assess different aspects of bias through a compositional taxonomy. Our taxonomy characterizes each dataset along three key dimensions: <b>bias type</b> (e.g., stereotypes and toxicity), <b>social group</b> (e.g., age, gender, race, religion), and <b>task type</b> (e.g., direct and indirect evaluation). This compositional approach enables flexible combination of different dimensions, allowing for the construction of new datasets based on various configurations.
+          </p>
+          <!-- <p style="text-align:justify; color:rgb(31, 30, 30);"> -->
+          <p>
+            By providing a comprehensive and systematic framework for bias evaluation, CEB aims to advance the development of more fair and equitable LLMs, serving as a valuable resource for the research community.
+          </p>
+      </div>
+    <div class="columns is-vcentered interpolation-panel">
+  </div>
+</section>
 
-<!-- Overview Section -->
-<section class="section" id="overview" style="padding-top:1.5rem;">
-  <div class="container" style="max-width: 80%; margin: 0 auto;">
-    <h2 class="title is-3" style="text-align:center; margin-bottom:1rem;">Overview</h2>
-    <br>
-    <div class="content has-text-justified" style="max-width: 95%; font-size: 1.0em; margin: 0 auto; line-height: 1.55;">
-      <p style="text-align:justify; color:rgb(31, 30, 30);">
-        We present <b>CEB</b>, a <b><u>C</u></b>ompositional <b><u>E</u></b>valuation <b><u>B</u></b>enchmark for systematically evaluating bias in Large Language Models (LLMs). CEB comprises 19 novel datasets (11,004 samples in total) that assess different aspects of bias through a compositional taxonomy. Our taxonomy characterizes each dataset along three key dimensions: <b>bias type</b> (e.g., stereotypes and toxicity), <b>social group</b> (e.g., age, gender, race, religion), and <b>task type</b> (e.g., direct and indirect evaluation). This compositional approach enables flexible combination of different dimensions, allowing for the construction of new datasets based on various configurations.
-      </p>
-      <p style="text-align:justify; color:rgb(31, 30, 30);">
-        By providing a comprehensive and systematic framework for bias evaluation, CEB aims to advance the development of more fair and equitable LLMs, serving as a valuable resource for the research community.
-      </p>
-    </div>
 
-    <!-- Figure 1 -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-eight-fifths">
-        <figure class="table-figure">
-          <img class="figure-image" src="static/images/framework.png" alt="Figure 1. Overview of CEB." style="text-align:center; margin-bottom:1rem;"/>
-          <figcaption class="figure-caption">
-            <b>Figure 1.</b> Overview of CEB. Left: Our compositional taxonomy of datasets, characterizing three key components: bias types, social groups, and tasks. Center: The exemplar prompts as LLM input for different tasks of the Stereotyping bias type. Right: Evaluation metrics for tasks.
-          </figcaption>
-        </figure>
-
-        <p style="text-align:justify; color:rgb(31, 30, 30); margin-top:1rem; margin-bottom:1rem; line-height: 1.55; max-width: 95%; margin: 0 auto;">
-          CEB is designed to evaluate the bias of LLMs in two different ways: <b>Direct Evaluation</b> and <b>Indirect Evaluation</b>.
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Evaluation Tasks</h2>
+        <div class="content has-text-justified">
+          <p>
+            CEB is designed to evaluate the bias of LLMs in two different ways: <b>Direct Evaluation</b> and <b>Indirect Evaluation</b>.
+          </p>
           <ul>
             <li><b>Direct Evaluation</b> assesses the responses of LLMs to potentially biased input. Confronted with
               biased input, the reactions of LLMs could directly reveal their biased opinions. These tasks include:
@@ -212,27 +213,20 @@
             </ul>
             </li>
           </ul>
-        </p>
       </div>
-    </div>
+    <div class="columns is-vcentered interpolation-panel">
+  </div>
+</section>
 
-    <!-- Figure 2 -->
-    <br>
-    <br>
-    <h2 class="title is-3" style="text-align:center; margin-bottom:1.5rem;">Dataset Curation</h2>
-    <div class="columns is-centered has-text-centered" style="margin-top:2em;">
-      <div class="column is-eight-fifths">
-        <figure class="table-figure">
-          <img class="figure-image" src="static/images/dataset_curation.png" alt="Figure 2. Detailed curation process of CEB." style="max-width: 98%; margin: 0 auto; margin-bottom:1rem;" />
-          <figcaption class="figure-caption">
-            <b>Figure 2.</b> The detailed dataset construction process of five tasks with the bias type of Stereotyping
-            based on our compositional taxonomy. The process of the Toxicity bias type is similar, except that
-            <i>"stereotypical"</i> is replaced with <i>"toxic"</i>.
-          </figcaption>
-        </figure>
-
-        <p style="text-align:justify; margin-top:1em;  margin-bottom:1rem; line-height: 1.55; max-width: 95%; margin: 0 auto; color:rgb(31, 30, 30);">
-          Existing datasets are often limited in their coverage of bias types, social groups and tasks, but serve as a good starting point for CEB to synthensize new datasets. We leverage GPT-3.5 and GPT-4 to operate necessary augmentations to provide additional information for constructed samples.
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Dataset Curation</h2>
+        <div class="content has-text-justified">
+          <p>
+            Existing datasets are often limited in their coverage of bias types, social groups and tasks, but serve as a good starting point for CEB to synthensize new datasets. We leverage GPT-3.5 and GPT-4 to operate necessary augmentations to provide additional information for constructed samples.
+          </p>
           <ul>
             <li>
               <b>Recognition & Selection</b>: We leverage GPT-3.5/4 to generate toxic and non-toxic narrative sentences based on seed prompts extracted from the BBQ dataset
@@ -244,9 +238,9 @@
               <b>Classification</b>: We utilize tabular datasets for stereotypical assessments and the Jigsaw dataset for toxicity identification.
             </li>
           </ul>
-        </p>
+          <img class="figure-image" src="static/images/dataset_curation.png" alt="Figure 2. Detailed curation process of CEB."/>
       </div>
-    </div>
+    <div class="columns is-vcentered interpolation-panel">
   </div>
 </section>
 
