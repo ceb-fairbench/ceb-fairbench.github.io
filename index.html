@@ -230,11 +230,18 @@
           <p>
             Existing datasets are often limited in their coverage of bias types, social groups and tasks, but serve as a good starting point for CEB to synthensize new datasets. We leverage GPT-3.5 and GPT-4 to operate necessary augmentations to provide additional information for constructed samples.
           </p>
-          <figure class="table-figure">
-            <img src="static/images/dataset_curation.png" alt="Figure 2. Detailed curation process of CEB." style="width: 100%;">
-            <figcaption class="figure-caption">
-              <b>Figure 2.</b> The detailed dataset construction process of five tasks with the bias type of Stereotyping based on our compositional taxonomy. The process of the Toxicity bias type is similar, except that <i>"stereotypical"</i> is replaced with <i>"toxic"</i>.
-          </figure>
+        </div>
+      </div>
+    </div>
+    <figure class="table-figure">
+      <img src="static/images/dataset_curation.png" alt="Figure 2. Detailed curation process of CEB." style="width: 100%;">
+      <figcaption class="figure-caption">
+        <b>Figure 2.</b> The detailed dataset construction process of five tasks with the bias type of Stereotyping based on our compositional taxonomy. The process of the Toxicity bias type is similar, except that <i>"stereotypical"</i> is replaced with <i>"toxic"</i>.
+      </figcaption>
+    </figure>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
           <ul>
             <li>
               <b>Recognition & Selection</b>: We leverage GPT-3.5/4 to generate toxic and non-toxic narrative sentences based on seed prompts extracted from the BBQ dataset.
@@ -246,8 +253,9 @@
               <b>Classification</b>: We utilize tabular datasets for stereotypical assessments and the Jigsaw dataset for toxicity identification.
             </li>
           </ul>
+        </div>
       </div>
-    <div class="columns is-vcentered interpolation-panel">
+    </div>
   </div>
 </section>
 
