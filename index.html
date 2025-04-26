@@ -74,7 +74,7 @@
               <a href="https://zhen-tan-dmml.github.io/">Zhen Tan</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://jundongli.github.io/">Jundong Li</a><sup>1</sup>,
+              <a href="https://jundongli.github.io/">Jundong Li</a><sup>1</sup>
             </span>
           </div>
 
@@ -174,7 +174,7 @@
           </p>
           <!-- <p style="text-align:justify; color:rgb(31, 30, 30);"> -->
           <p>
-            By providing a comprehensive and systematic framework for bias evaluation, <b>CEB</b> aims to advance the development of more fair and equitable LLMs, serving as a valuable resource for the research community.
+            By providing a comprehensive and systematic framework for bias evaluation, CEB aims to advance the development of more fair and equitable LLMs, serving as a valuable resource for the research community.
           </p>
       </div>
     <div class="columns is-vcentered interpolation-panel">
@@ -189,7 +189,7 @@
         <h2 class="title is-3">Evaluation Tasks</h2>
         <div class="content has-text-justified">
           <p>
-            <b>CEB</b> is designed to evaluate the bias of LLMs in two different ways: <b>Direct Evaluation</b> and <b>Indirect Evaluation</b>.
+            CEB is designed to evaluate the bias of LLMs in two different ways: <b>Direct Evaluation</b> and <b>Indirect Evaluation</b>.
           </p>
           <ul>
             <li><b>Direct Evaluation</b> assesses the responses of LLMs to potentially biased input. Confronted with biased input, the reactions of LLMs could directly reveal their biased opinions. These tasks include:
@@ -360,6 +360,51 @@
       </div>
   </div>
 </section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Main Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            Existing datasets are often limited in their coverage of bias types, social groups and tasks, but serve as a good starting point for CEB to synthensize new datasets. We leverage GPT-3.5 and GPT-4 to operate necessary augmentations to provide additional information for constructed samples.
+          </p>
+        </div>
+      </div>
+    </div>
+    <figure class="table-figure">
+      <img src="static/images/CEB_stereotyping_overall_scores.png" alt="Figure 14. CEB Stereotyping Overall Scores." style="width: 100%;">
+      <figcaption class="figure-caption">
+        <b>Figure 14.</b> The overall results of various LLMs on all datasets for Stereotyping. All scores are higher the better. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
+      </figcaption>
+    </figure>
+    <figure class="table-figure">
+      <img src="static/images/CEB_toxicity_overall_scores.png" alt="Figure 15. CEB Toxicity Overall Scores." style="width: 100%;">
+      <figcaption class="figure-caption">
+        <b>Figure 15.</b> The overall results of various LLMs on all datasets for Toxicity. All scores are higher the better. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
+      </figcaption>
+    </figure>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              From the results, we could observe that GPT-3.5 and GPT-4 consistently outperform other LLMs on a variety of tasks, as well as the overall score. This indicates the superiority of GPT models regarding the presence of inherent bias.
+            </li>
+            <li>
+              GPT models may not perform the best when the bias type is switched to Toxicity, which demonstrates its weakness in dealing with toxic content, especially when being asked to generate text in the for those indirect evlauation tasks.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
 
 <section class="section" id="BibTeX">
