@@ -405,7 +405,7 @@
         <div class="content has-text-justified">
           <ul>
             <li>
-              From the results, we could observe that GPT-3.5 and GPT-4 consistently outperform other LLMs on a variety of tasks, as well as the overall score. This indicates the superiority of GPT models regarding the presence of inherent bias.
+              From the results, we could observe that <b><u>GPT-3.5 and GPT-4 consistently outperform other LLMs</u></b> on a variety of tasks, as well as the overall score. This indicates the superiority of GPT models regarding the presence of inherent bias.
             </li>
             <li>
               GPT models may not perform as well when the bias type is switched to <b>Toxicity</b>, which demonstrates their weakness in dealing with toxic content—especially when asked to <b>generate text</b> for those indirect evaluation tasks.
@@ -416,7 +416,7 @@
     </div>
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h3 class="title is-3">Group-wise Fairness Tasks</h3>
+        <h3 class="title is-4">Group-wise Fairness Tasks</h3>
         <div class="content has-text-justified">
           <p>
             The tasks shown in Table 1 and 2 are point-wise bias identification tasks. In this section, we present the results of group-wise fairness tasks, which are more challenging due to the need to identify the senentive attributes and consider the group distribution of the data. 
@@ -427,9 +427,20 @@
     <figure class="table-figure">
       <img src="static/images/CEB_decision_making_group_fairness.png" alt="Table 3. CEB Decision-making Group Fairness." style="width: 100%;">
       <figcaption class="figure-caption">
-        <b>Table 3.</b> Results of \(\Delta\)DP and \(\Delta\)EO in \(%\) of various LLMs on our CEB datasets for the Classification task. <b><u></u>The lower values denote fairer results</u></b>. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
+        <b>Table 3.</b> Results of \(\Delta\)DP and \(\Delta\)EO in \(\%\) of various LLMs on our CEB datasets for the Classification task. <b><u></u>The lower values denote fairer results</u></b>. Results with exceptionally high RtA rates are highlighted in red, and the best results (excluding results with high RtA rates) are in green.
       </figcaption>
     </figure>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              Best performance for the Classification task is distributed across various LLMs. This indicates that such <b>group fairness is more difficult to achieve</b>, even for powerful LLMs with superior performance on other tasks, such as GPT-3.5 and GPT-4.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
