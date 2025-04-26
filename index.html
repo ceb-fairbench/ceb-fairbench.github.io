@@ -156,10 +156,9 @@
       different types of bias across different social groups and tasks, is designed for the systematic bias evaluation of LLMs.
     </h2>
     <figure class="table-figure">
-      <img src="static/images/framework.png" alt="CEB Framework" style="width: 100%;">
+      <img src="static/images/framework.png" alt="Figure 1. CEB Framework" style="width: 100%;">
       <figcaption class="figure-caption">
-        <b>Figure 1.</b> Overview of CEB's compositional taxonomy and evaluation framework.
-      </figcaption>
+        <b>Figure 1.</b> Overview of CEB. Left: Our compositional taxonomy of datasets, characterizing three key components: bias types, social groups, and tasks. Center: The exemplar prompts as LLM input for different tasks of the Stereotyping bias type. Right: Evaluation metrics for tasks.
     </figure>
   </div>
 </section>
@@ -232,6 +231,11 @@
             Existing datasets are often limited in their coverage of bias types, social groups and tasks, but serve as a good starting point for CEB to synthensize new datasets. We leverage GPT-3.5 and GPT-4 to operate necessary augmentations to provide additional information for constructed samples.
           </p>
           <img class="figure-image" src="static/images/dataset_curation.png" alt="Figure 2. Detailed curation process of CEB."/>
+          <figure class="table-figure">
+            <img src="static/images/dataset_curation.png" alt="Figure 2. Detailed curation process of CEB." style="width: 100%;">
+            <figcaption class="figure-caption">
+              <b>Figure 2.</b> The detailed dataset construction process of five tasks with the bias type of Stereotyping based on our compositional taxonomy. The process of the Toxicity bias type is similar, except that <i>"stereotypical"</i> is replaced with <i>"toxic"</i>.
+          </figure>
           <ul>
             <li>
               <b>Recognition & Selection</b>: We leverage GPT-3.5/4 to generate toxic and non-toxic narrative sentences based on seed prompts extracted from the BBQ dataset.
