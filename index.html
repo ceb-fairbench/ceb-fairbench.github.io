@@ -219,16 +219,17 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Dataset Curation</h2>
         <div class="content has-text-justified">
           <p>
             Existing datasets are often limited in their coverage of bias types, social groups and tasks, but serve as a good starting point for CEB to synthensize new datasets. We leverage GPT-3.5 and GPT-4 to operate necessary augmentations to provide additional information for constructed samples.
           </p>
+          <img class="figure-image" src="static/images/dataset_curation.png" alt="Figure 2. Detailed curation process of CEB."/>
           <ul>
             <li>
-              <b>Recognition & Selection</b>: We leverage GPT-3.5/4 to generate toxic and non-toxic narrative sentences based on seed prompts extracted from the BBQ dataset
+              <b>Recognition & Selection</b>: We leverage GPT-3.5/4 to generate toxic and non-toxic narrative sentences based on seed prompts extracted from the BBQ dataset.
             </li>
             <li>
               <b>Continuation & Conversation</b>: We leverage GPT-3.5/4 to generate the beginnings of articles or conversations that could elicit toxic or stereotypical content based on seed prompts extracted from the HolisticBias dataset.
@@ -237,7 +238,6 @@
               <b>Classification</b>: We utilize tabular datasets for stereotypical assessments and the Jigsaw dataset for toxicity identification.
             </li>
           </ul>
-          <img class="figure-image" src="static/images/dataset_curation.png" alt="Figure 2. Detailed curation process of CEB."/>
       </div>
     <div class="columns is-vcentered interpolation-panel">
   </div>
